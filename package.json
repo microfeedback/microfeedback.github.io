@@ -1,0 +1,116 @@
+{
+  "name": "microfeedback-website",
+  "private": true,
+  "description": "MicroFeedback official website",
+  "version": "1.0.0",
+  "author": "Steven Loria <sloria1@gmail.com>",
+  "resolutions": {
+    "gatsby/react": "16.0.0",
+    "gatsby/react-dom": "16.0.0"
+  },
+  "dependencies": {
+    "array-from": "^2.1.1",
+    "eslint": "^4.15.0",
+    "eslint-plugin-react": "^7.5.1",
+    "gatsby": "^1.9.153",
+    "gatsby-link": "^1.6.34",
+    "gatsby-plugin-catch-links": "^1.0.14",
+    "gatsby-plugin-favicon": "^2.1.1",
+    "gatsby-plugin-glamor": "^1.6.10",
+    "gatsby-plugin-google-fonts": "0.0.3",
+    "gatsby-plugin-react-helmet": "^2.0.3",
+    "gatsby-remark-autolink-headers": "^1.4.4",
+    "gatsby-remark-copy-linked-files": "^1.5.2",
+    "gatsby-remark-images": "^1.5.11",
+    "gatsby-remark-prismjs": "^1.2.1",
+    "gatsby-remark-responsive-iframe": "^1.4.3",
+    "gatsby-remark-smartypants": "^1.4.3",
+    "gatsby-source-filesystem": "^1.5.11",
+    "gatsby-transformer-remark": "^1.7.28",
+    "glamor": "^2.20.40",
+    "hex2rgba": "0.0.1",
+    "microfeedback-button": "^0.5.0",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-helmet": "^5.2.0",
+    "slugify": "^1.2.9",
+    "string.prototype.includes": "^1.0.0",
+    "string.prototype.repeat": "^0.2.0"
+  },
+  "keywords": [
+    "gatsby",
+    "microfeedback",
+    "documentation"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "build": "gatsby build",
+    "dev": "gatsby develop",
+    "format": "prettier --write \"src/**/*.js\"",
+    "lint": "xo",
+    "test": "npm run lint"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint-config-xo-react": "^0.15.0",
+    "prettier": "^1.10.2",
+    "xo": "^0.18.2"
+  },
+  "xo": {
+    "envs": [
+      "node",
+      "browser"
+    ],
+    "parser": "babel-eslint",
+    "extends": "eslint-config-xo-react",
+    "space": true,
+    "rules": {
+      "import/no-unassigned-import": 0,
+      "no-warning-comments": 0,
+      "react/prop-types": 0,
+      "react/jsx-closing-bracket-location": 0,
+      "react/jsx-curly-brace-presence": 0,
+      "react/jsx-one-expression-per-line": 0,
+      "react/jsx-tag-spacing": 0,
+      "unicorn/filename-case": 0,
+      "capitalized-comments": 0,
+      "react/no-danger": 0,
+      "operator-linebreak": [
+        "error",
+        "after",
+        {
+          "overrides": {
+            "?": "before",
+            ":": "before"
+          }
+        }
+      ],
+      "quotes": [
+        "error",
+        "single",
+        {
+          "avoidEscape": true
+        }
+      ],
+      "comma-dangle": [
+        "error",
+        {
+          "arrays": "always-multiline",
+          "objects": "always-multiline",
+          "imports": "always-multiline",
+          "exports": "always-multiline",
+          "functions": "never"
+        }
+      ]
+    }
+  },
+  "prettier": {
+    "bracketSpacing": false,
+    "useTabs": false,
+    "jsxBracketSameLine": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  }
+}
