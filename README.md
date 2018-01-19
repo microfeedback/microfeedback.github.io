@@ -1,13 +1,15 @@
-# gatsby-starter-default
-The default Gatsby starter
+# MicroFeedback website
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
+## Writing content
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-example-site
-```
+Content is located in the `content/` directory.
 
-## Deploy
+For small edits, use the GitHub UI.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+For significant edits, clone the repo and run the project locally, make
+your changes, and send a PR.
+
+## Development
+
+- npm i
+- npm run dev
