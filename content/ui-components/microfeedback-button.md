@@ -6,8 +6,8 @@ microfeedback-button adds a configurable feedback button to your website.
 
 ## Quickstart
 
-First, [deploy](/getting-started/deployment/) a microfeedback backend, e.g.
-[microfeedback-github](/microfeedback-github).
+First, [deploy](/getting-started/deployment) a microfeedback backend, e.g.
+[microfeedback-github](/backends/microfeedback-github).
 
 Add the following to your site, replacing `'http://your-backend-url.now.sh/'` with your backend's URL.
 

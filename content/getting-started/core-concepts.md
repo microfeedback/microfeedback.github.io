@@ -25,6 +25,6 @@ dialog, a `POST` request is made to the specified backend's URL.
 
 ## Next steps
 
-- See the [Deployment](/getting-started/deployment/) guide to learn how to deploy a MicroFeedback backend.
+- See the [Deployment](/getting-started/deployment) guide to learn how to deploy a MicroFeedback backend.
 - Go to the [Backends](/backends/) section for detailed documentation available backends.
 - Use [microfeedback-button](/ui-components/microfeedback-button/) to display a feedback button on your website.

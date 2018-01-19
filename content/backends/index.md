@@ -11,4 +11,4 @@ Officially supported backends:
 * [microfeedback-github](/backends/microfeedback-github)
 * [microfeedback-jira](/backends/microfeedback-jira)
 
-For a deployment guide, see [this page](/getting-started/deployment/).
+For a deployment guide, see [this page](/getting-started/deployment).

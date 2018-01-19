@@ -206,8 +206,8 @@ class Home extends Component {
                   },
                 }}>
                 <Marketing title="Services You Use">
-                  MicroFeedback integrates with GitHub and Jira out-of-the-box. You
-                  can create a custom backend to support other issue trackers.
+                  MicroFeedback support GitHub and Jira, you
+                  can create custom backends to support other issue trackers.
                 </Marketing>
                 <Marketing title="Easy Deployment">
                   Host your own MicroFeedback backend with one command using either ZEIT now or Heroku.
