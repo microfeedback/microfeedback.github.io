@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
-import {colors, fonts, media} from '../theme';
+import {colors, media} from '../theme';
 import Container from './Container';
 import Flex from './Flex';
 
@@ -43,7 +43,6 @@ const SecondaryLabel = ({children}) => (
   <div
     css={{
       color: colors.text,
-      ...fonts.small,
     }}>
     {children}
   </div>

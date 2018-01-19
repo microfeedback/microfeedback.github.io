@@ -54,11 +54,9 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-google-fonts',
+      resolve: 'gatsby-plugin-typography',
       options: {
-        fonts: [
-          'raleway:300,700',
-        ],
+        pathToConfigModule: './src/utils/typography.js',
       },
     },
     'gatsby-plugin-catch-links',

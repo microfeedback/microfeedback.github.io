@@ -3,7 +3,6 @@ import 'array-from';
 import 'string.prototype.includes';
 import 'string.prototype.repeat';
 
-import {css} from 'glamor';
 import React, {Component} from 'react';
 import microfeedback from 'microfeedback-button';
 import Flex from '../components/Flex';
@@ -12,23 +11,10 @@ import Header from '../components/Header';
 import {microfeedbackURL} from '../site-constants';
 
 // Import global styles
-import 'glamor/reset';
 import '../prism-styles';
 import '../css/reset.css';
-import {media, fonts} from '../theme';
-
-css.global('body', {
-  ...fonts.body,
-});
-
-css.global('h1,h2,h3,h4,h5,h6', {
-  ...fonts.header,
-});
-
-// Fix spacing on feedback button
-css.global('button.microfeedback-button', {
-  paddingTop: '8px !important',
-});
+import '../css/microfeedback-button.css';
+import {media} from '../theme';
 
 class Template extends Component {
   componentDidMount() {

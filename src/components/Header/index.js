@@ -53,7 +53,7 @@ const Header = ({location}) => (
             },
           }}
           to="/">
-          <img src={logo} alt="" height="30" />
+          <img css={{marginBottom: 0}} src={logo} alt="MicroFeedback logo" height="30" />
           <span
             css={{
               color: 'inherit',
@@ -134,7 +134,7 @@ const Header = ({location}) => (
               marginLeft: 10,
               whiteSpace: 'nowrap',
               float: 'right',
-              ...fonts.small,
+              fontSize: '0.824em',
 
               ':hover': {
                 color: colors.primary,

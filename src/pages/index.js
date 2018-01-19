@@ -126,10 +126,13 @@ class Home extends Component {
                   css={{
                     textAlign: 'center',
                     margin: 0,
-                    fontSize: 45,
                     letterSpacing: '0.01em',
-                    [media.size('xsmall')]: {
-                      fontSize: '1.667em',
+                    fontSize: '2em',
+                    [media.greaterThan('medium')]: {
+                      fontSize: '2.5em',
+                    },
+                    [media.greaterThan('large')]: {
+                      fontSize: '3em',
                     },
                     [media.greaterThan('xlarge')]: {
                       fontSize: '3.333em',
@@ -137,29 +140,32 @@ class Home extends Component {
                   }}>
                   {name}
                 </h1>
-                <p
+                <h2
                   css={{
                     paddingTop: 15,
                     textAlign: 'center',
-                    fontSize: '1.4em',
+                    fontSize: '1.1em',
                     letterSpacing: '0.01em',
 
                     [media.size('xsmall')]: {
-                      fontSize: '1.3em',
-                      maxWidth: '12em',
                       marginLeft: 'auto',
                       marginRight: 'auto',
+                    },
+                    [media.greaterThan('small')]: {
+                      fontSize: '1.3em',
+                    },
+                    [media.greaterThan('large')]: {
+                      fontSize: '1.5em',
                     },
 
                     [media.greaterThan('xlarge')]: {
                       paddingTop: 20,
-                      fontSize: '1.667em',
                     },
                     fontFamily: fonts.brand.fontFamily,
                     fontWeight: 300,
                   }}>
                   {tagline}
-                </p>
+                </h2>
                 <Flex
                   valign="center"
                   direction="column"

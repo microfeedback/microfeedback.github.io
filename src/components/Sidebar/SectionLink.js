@@ -15,7 +15,6 @@ const activeLinkBefore = {
   paddingLeft: 16,
   position: 'absolute',
   left: 0,
-  marginTop: -3,
 
   [media.greaterThan('largerSidebar')]: {
     left: 15,

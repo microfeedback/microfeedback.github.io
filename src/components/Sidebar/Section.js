@@ -34,7 +34,7 @@ const Section = ({
         {section.title}
       </MetaTitle>
     </a>
-    <ul
+    <div
       css={{
         marginBottom: 10,
         [media.greaterThan('small')]: {
@@ -42,7 +42,7 @@ const Section = ({
         },
       }}>
       {section.items.map(item => (
-        <li
+        <div
           key={item.id}
           css={{
             marginTop: 5,
@@ -58,9 +58,9 @@ const Section = ({
           />
 
           {item.subitems && (
-            <ul css={{marginLeft: 20}}>
+            <div css={{marginLeft: 20}}>
               {item.subitems.map(subitem => (
-                <li key={subitem.id}>
+                <div key={subitem.id}>
                   <SectionLink
                     isActive={
                       isScrollSync
@@ -69,13 +69,13 @@ const Section = ({
                     }
                     item={subitem}
                   />
-                </li>
+                </div>
               ))}
-            </ul>
+            </div>
           )}
-        </li>
+        </div>
       ))}
-    </ul>
+    </div>
   </div>
 );
 

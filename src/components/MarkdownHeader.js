@@ -1,5 +1,5 @@
 import React from 'react';
-import {colors, fonts, media} from '../theme';
+import {colors, media} from '../theme';
 import Flex from './Flex';
 
 const MarkdownHeader = ({title}) => (
@@ -9,8 +9,6 @@ const MarkdownHeader = ({title}) => (
         color: colors.dark,
         marginBottom: 0,
         marginTop: 40,
-        ...fonts.header,
-
         [media.size('medium')]: {
           marginTop: 60,
         },

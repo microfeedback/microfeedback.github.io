@@ -79,24 +79,6 @@ const fonts = {
     fontFamily: headerFont,
     fontWeight: 700,
   },
-  header: {
-    lineHeight: '65px',
-    fontWeight: 700,
-    fontFamily: headerFont,
-
-    [media.lessThan('medium')]: {
-      fontSize: 40,
-      lineHeight: '45px',
-    },
-  },
-  body: {
-    fontFamily: systemUIFont,
-    fontSize: '106.5%', // 17px
-    lineHeight: 1.6,
-  },
-  small: {
-    fontSize: 14,
-  },
 };
 
 // Shared styles are generally better as components,
@@ -126,11 +108,11 @@ const sharedStyles = {
       },
     },
     content: {
-      marginTop: 40,
+      marginTop: 30,
       marginBottom: 120,
 
       [media.greaterThan('medium')]: {
-        marginTop: 50,
+        marginTop: 40,
       },
     },
     sidebar: {
@@ -198,13 +180,14 @@ const sharedStyles = {
     '& a:not(.anchor):not(.gatsby-resp-image-link)': linkStyle,
 
     '& > p:first-child': {
-      fontSize: 18,
+      fontSize: '1.1em',
       fontWeight: 300,
+      marginBottom: '1.8rem',
       fontFamily: headerFont,
       color: colors.subtle,
 
       [media.greaterThan('xlarge')]: {
-        fontSize: 24,
+        fontSize: '1.3em',
       },
 
       '& a, & strong': {
@@ -240,7 +223,7 @@ const sharedStyles = {
 
     '& p > code, & li > code, & p > a > code, & li > a > code': {
       padding: '0 3px',
-      fontSize: '0.875em',
+      fontSize: '1em',
       wordBreak: 'break-word',
     },
 
@@ -256,39 +239,15 @@ const sharedStyles = {
       },
     },
 
-    '& h1': {
-      lineHeight: 1.2,
-
-      [media.size('xsmall')]: {
-        fontSize: 30,
-      },
-
-      [media.between('small', 'large')]: {
-        fontSize: 45,
-      },
-
-      [media.greaterThan('xlarge')]: {
-        fontSize: 60,
-      },
-    },
-
     '& h2': {
       borderTop: `1px solid ${colors.divider}`,
       marginTop: 44,
       paddingTop: 40,
-      lineHeight: 1.2,
 
       ':first-child': {
         borderTop: 0,
         marginTop: 0,
         paddingTop: 0,
-      },
-
-      [media.lessThan('large')]: {
-        fontSize: 20,
-      },
-      [media.greaterThan('xlarge')]: {
-        fontSize: 35,
       },
     },
 
@@ -297,29 +256,8 @@ const sharedStyles = {
       marginTop: 0,
     },
 
-    '& h3': {
-      paddingTop: 45,
-
-      [media.greaterThan('xlarge')]: {
-        fontSize: 25,
-        lineHeight: 1.3,
-      },
-    },
-
     '& h2 + h3, & h2 + h3:first-of-type': {
-      paddingTop: 30,
-    },
-
-    '& h4': {
-      fontSize: 20,
-      color: colors.subtle,
-      lineHeight: 1.3,
-      marginTop: 50,
-      fontWeight: 400,
-    },
-
-    '& h4 + p': {
-      marginTop: 20,
+      paddingTop: '0.75em',
     },
 
     '& ol, & ul': {
@@ -343,48 +281,6 @@ const sharedStyles = {
 
     '& img': {
       maxWidth: '100%',
-    },
-
-    '& ol': {
-      listStyle: 'decimal',
-    },
-
-    '& ul': {
-      listStyle: 'disc',
-    },
-
-    '& blockquote': {
-      backgroundColor: hex2rgba('#ffe564', 0.3),
-      borderLeftColor: colors.note,
-      borderLeftWidth: 9,
-      borderLeftStyle: 'solid',
-      padding: '20px 45px 20px 26px',
-      marginBottom: 30,
-      marginTop: 20,
-      marginLeft: -30,
-      marginRight: -30,
-
-      [media.lessThan('small')]: {
-        marginLeft: -20,
-        marginRight: -20,
-      },
-
-      '& p': {
-        marginTop: 15,
-
-        '&:first-of-type': {
-          fontWeight: 700,
-          marginTop: 0,
-        },
-
-        '&:nth-of-type(2)': {
-          marginTop: 0,
-        },
-      },
-    },
-
-    '& .gatsby-highlight + blockquote': {
-      marginTop: 40,
     },
   },
 };
