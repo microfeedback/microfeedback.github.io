@@ -2,7 +2,7 @@ import React from 'react';
 
 import findSectionForPath from '../utils/findSectionForPath';
 import createOgUrl from '../utils/createOgUrl';
-import {sharedStyles} from '../theme';
+import {sharedStyles, media} from '../theme';
 import {githubURL} from '../site-constants';
 import TitleAndMetaTags from './TitleAndMetaTags';
 import MarkdownHeader from './MarkdownHeader';
@@ -32,6 +32,10 @@ const MarkdownPage = ({
         width: '100%',
         flex: '1 0 auto',
         position: 'relative',
+        minHeight: 'calc(100vh - 60px)',
+        [media.lessThan('large')]: {
+          minHeight: 'calc(100vh - 50px)',
+        },
         zIndex: 0,
       }}>
       <TitleAndMetaTags

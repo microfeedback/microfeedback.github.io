@@ -49,11 +49,10 @@ class Template extends Component {
           css={{
             flex: '1 0 auto',
             marginTop: 60,
-            [media.between('medium', 'large')]: {
+            minHeight: 'calc(100vh - 60px)',
+            [media.lessThan('large')]: {
+              minHeight: 'calc(100vh - 50px)',
               marginTop: 50,
-            },
-            [media.lessThan('medium')]: {
-              marginTop: 40,
             },
           }}>
           {children()}

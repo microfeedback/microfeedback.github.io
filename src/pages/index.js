@@ -83,10 +83,6 @@ class Home extends Component {
       <div
         css={{
           width: '100%',
-          minHeight: 'calc(100vh - 60px)',
-          [media.lessThan('large')]: {
-            minHeight: 'calc(100vh - 50px)',
-          },
         }}>
         <TitleAndMetaTags
           title={`${name} - ${tagline}`}
@@ -171,9 +167,9 @@ class Home extends Component {
                   direction="column"
                   halign="center"
                   css={{
-                    paddingTop: 40,
+                    paddingTop: 20,
                     [media.greaterThan('xlarge')]: {
-                      paddingTop: 65,
+                      paddingTop: 40,
                     },
                   }}>
                   <ButtonLink to="/getting-started/" type="primary">
@@ -210,11 +206,11 @@ class Home extends Component {
                   },
                 }}>
                 <Marketing title="Services You Use">
-                  MicroFeedback integrates with the issue tracking service you
-                  already use, such as GitHub or JIRA.
+                  MicroFeedback integrates with GitHub and Jira out-of-the-box. You
+                  can create a custom backend to support other issue trackers.
                 </Marketing>
                 <Marketing title="Easy Deployment">
-                  Deploy a backend in one command with either ZEIT now or Heroku.
+                  Host your own MicroFeedback backend with one command using either ZEIT now or Heroku.
                 </Marketing>
                 <Marketing title="Free and Open Source">
                   MicroFeedback is free to use and liberally licensed (MIT).
