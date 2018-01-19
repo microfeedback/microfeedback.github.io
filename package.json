@@ -29,7 +29,6 @@
     "gatsby-source-filesystem": "^1.5.11",
     "gatsby-transformer-remark": "^1.7.28",
     "glamor": "^2.20.40",
-    "hex2rgba": "0.0.1",
     "microfeedback-button": "^0.5.0",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",

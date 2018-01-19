@@ -219,6 +219,34 @@ class Home extends Component {
             </section>
           </div>
         </Container>
+        <section
+          css={{
+            background: colors.dark,
+            color: colors.white,
+            paddingTop: 45,
+            paddingBottom: 45,
+          }}>
+          <Container>
+            <Flex halign="center" valign="center">
+              <span
+                css={{
+                  ...fonts.brand,
+                  fontWeight: 300,
+                  marginRight: 30,
+                  fontSize: '1.1em',
+                  color: colors.subtleOnDark,
+                  [media.greaterThan('small')]: {
+                    fontSize: '1.5em',
+                  },
+                }}>
+                The easiest way to collect user feedback
+              </span>
+              <ButtonLink to="/getting-started/" type="primary">
+                Get Started
+              </ButtonLink>
+            </Flex>
+          </Container>
+        </section>
       </div>
     );
   }

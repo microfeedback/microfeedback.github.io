@@ -104,6 +104,11 @@ const Footer = ({layoutHasSidebar = false}) => (
             }}>
             Copyright © {new Date().getFullYear() + ' '}
             <a
+              css={{
+                ':hover': {
+                  color: colors.primary,
+                },
+              }}
               href={copyrightOwnerURL}
               target="_blank"
               rel="noopener noreferrer"

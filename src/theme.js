@@ -1,13 +1,9 @@
 /**
- * Theme contains variables shared by styles of multiple components.
+ *  Variables and functions shared by styles of multiple components.
  */
-
-import hex2rgba from 'hex2rgba';
-
 const colors = {
   dark: '#282c34',
   darker: '#20232a',
-  highlight: '#bbeffd',
   text: '#1a1a1a',
   subtle: '#6d6d6d',
   subtleOnDark: '#999',
@@ -17,6 +13,9 @@ const colors = {
   black: '#000000',
   menu: '#f7f7f7',
   primary: '#3085d6',
+  linkHighlight: 'rgba(187, 239, 253, 0.3)',
+  linkHighlightHover: 'rgba(187, 239, 253, 1)',
+  codeHighlight: 'rgba(255, 229, 100, 0.2)',
 };
 
 const SIZES = {
@@ -85,12 +84,12 @@ const fonts = {
 // Except when they must be used within nested CSS selectors.
 // This is the case for eg markdown content.
 const linkStyle = {
-  backgroundColor: hex2rgba(colors.highlight, 0.3),
-  borderBottom: `1px solid ${hex2rgba(colors.black, 0.2)}`,
+  backgroundColor: colors.linkHighlight,
+  borderBottom: '1px solid rgba(0, 0, 0, 0.2)',
   color: colors.text,
 
   ':hover': {
-    backgroundColor: colors.highlight,
+    backgroundColor: colors.linkHighlightHover,
     borderBottomColor: colors.text,
   },
 };
@@ -217,7 +216,7 @@ const sharedStyles = {
     },
 
     '& p > code, & li > code': {
-      background: hex2rgba(colors.note, 0.2),
+      background: colors.codeHighlight,
       color: colors.text,
     },
 
