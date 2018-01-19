@@ -29,6 +29,12 @@ const typography = new Typography({
       ],
     },
   ],
+  // Workaround for https://github.com/KyleAMathews/typography.js/issues/148
+  overrideStyles: () => ({
+    html: {
+      lineHeight: 1.6,
+    },
+  }),
 });
 
 export default typography;
