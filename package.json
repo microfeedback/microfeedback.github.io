@@ -51,11 +51,13 @@
     "dev": "gatsby develop",
     "format": "prettier --write \"src/**/*.js\"",
     "lint": "xo",
-    "test": "npm run lint"
+    "test": "npm run lint",
+    "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
     "eslint-config-xo-react": "^0.15.0",
+    "gh-pages": "^1.1.0",
     "prettier": "^1.10.2",
     "xo": "^0.18.2"
   },
