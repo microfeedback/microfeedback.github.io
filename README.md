@@ -1,5 +1,7 @@
 # MicroFeedback website
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/microfeedback/microfeedback.github.io.svg)](https://greenkeeper.io/)
+
 ## Writing content
 
 Content is located in the `content/` directory.
