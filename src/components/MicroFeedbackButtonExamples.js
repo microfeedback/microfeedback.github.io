@@ -1,8 +1,11 @@
 import React from 'react';
 
-import microfeedback from 'microfeedback-button';
-
-const $ = document.querySelectorAll.bind(document);
+let microfeedback;
+let $;
+if (typeof window !== 'undefined') {
+  microfeedback = require('microfeedback-button');
+  $ = document.querySelectorAll.bind(document);
+}
 
 export default class MicroFeedbackButtonExamples extends React.Component {
   componentDidMount() {

@@ -4,7 +4,6 @@ import 'string.prototype.includes';
 import 'string.prototype.repeat';
 
 import React, {Component} from 'react';
-import microfeedback from 'microfeedback-button';
 import Flex from '../components/Flex';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
@@ -15,6 +14,11 @@ import '../prism-styles';
 import '../css/reset.css';
 import '../css/microfeedback-button.css';
 import {media} from '../theme';
+
+let microfeedback;
+if (typeof window !== 'undefined') {
+  microfeedback = require('microfeedback-button');
+}
 
 class Template extends Component {
   componentDidMount() {

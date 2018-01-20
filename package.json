@@ -51,7 +51,7 @@
     "dev": "gatsby develop",
     "format": "prettier --write \"src/**/*.js\"",
     "lint": "xo",
-    "test": "npm run lint",
+    "test": "npm run lint && npm run build",
     "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "devDependencies": {
