@@ -88,137 +88,146 @@ class Home extends Component {
           title={`${name} - ${tagline}`}
           ogUrl={createOgUrl('index.html')}
         />
-        <header
+        <div
           css={{
-            backgroundColor: colors.white,
-            color: colors.text,
-          }}>
-          <div
+            minHeight: 'calc(100vh - 60px)',
+            [media.lessThan('large')]: {
+              minHeight: 'calc(100vh - 50px)',
+            },
+          }}
+        >
+          <header
             css={{
-              paddingTop: 45,
-              paddingBottom: 20,
-
-              [media.greaterThan('small')]: {
-                paddingTop: 60,
-                paddingBottom: 70,
-              },
+              backgroundColor: colors.white,
+              color: colors.text,
             }}>
             <div
               css={{
-                // Content should be above absolutely-positioned hero image
-                position: 'relative',
-              }}>
-              <Container>
-                <img
-                  css={{
-                    display: 'block',
-                    marginRight: 'auto',
-                    marginLeft: 'auto',
-                  }}
-                  src={logo}
-                  height="150"
-                />
-                <h1
-                  css={{
-                    textAlign: 'center',
-                    margin: 0,
-                    letterSpacing: '0.01em',
-                    fontSize: '2em',
-                    [media.greaterThan('medium')]: {
-                      fontSize: '2.5em',
-                    },
-                    [media.greaterThan('large')]: {
-                      fontSize: '3em',
-                    },
-                    [media.greaterThan('xlarge')]: {
-                      fontSize: '3.333em',
-                    },
-                  }}>
-                  {name}
-                </h1>
-                <h2
-                  css={{
-                    paddingTop: 15,
-                    textAlign: 'center',
-                    fontSize: '1.1em',
-                    letterSpacing: '0.01em',
+                paddingTop: 45,
+                paddingBottom: 20,
 
-                    [media.size('xsmall')]: {
-                      marginLeft: 'auto',
-                      marginRight: 'auto',
-                    },
-                    [media.greaterThan('small')]: {
-                      fontSize: '1.3em',
-                    },
-                    [media.greaterThan('large')]: {
-                      fontSize: '1.5em',
-                    },
-
-                    [media.greaterThan('xlarge')]: {
-                      paddingTop: 20,
-                    },
-                    fontFamily: fonts.brand.fontFamily,
-                    fontWeight: 300,
-                  }}>
-                  {tagline}
-                </h2>
-                <Flex
-                  valign="center"
-                  direction="column"
-                  halign="center"
-                  css={{
-                    paddingTop: 20,
-                    [media.greaterThan('xlarge')]: {
-                      paddingTop: 40,
-                    },
-                  }}>
-                  <ButtonLink to="/getting-started/" type="primary">
-                    Get started
-                  </ButtonLink>
-                </Flex>
-              </Container>
-            </div>
-          </div>
-        </header>
-
-        <Container>
-          <div css={sharedStyles.markdown}>
-            <section
-              css={[
-                sectionStyles,
-                {
-                  [media.lessThan('medium')]: {
-                    marginTop: 0,
-                    paddingTop: 30,
-                    position: 'relative',
-                  },
+                [media.greaterThan('small')]: {
+                  paddingTop: 60,
+                  paddingBottom: 70,
                 },
-              ]}>
+              }}>
               <div
                 css={{
-                  display: 'flex',
-                  flexDirection: 'row',
-
-                  [media.lessThan('medium')]: {
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    textAlign: 'center',
-                  },
+                  // Content should be above absolutely-positioned hero image
+                  position: 'relative',
                 }}>
-                <Marketing title="Services You Use">
-                  MicroFeedback support GitHub and Jira, you
-                  can create custom backends to support other issue trackers.
-                </Marketing>
-                <Marketing title="Easy Deployment">
-                  Host your own MicroFeedback backend with one command using either ZEIT now or Heroku.
-                </Marketing>
-                <Marketing title="Free and Open Source">
-                  MicroFeedback is free to use and liberally licensed (MIT).
-                </Marketing>
+                <Container>
+                  <img
+                    css={{
+                      display: 'block',
+                      marginRight: 'auto',
+                      marginLeft: 'auto',
+                    }}
+                    src={logo}
+                    height="150"
+                  />
+                  <h1
+                    css={{
+                      textAlign: 'center',
+                      margin: 0,
+                      letterSpacing: '0.01em',
+                      fontSize: '2em',
+                      [media.greaterThan('medium')]: {
+                        fontSize: '2.5em',
+                      },
+                      [media.greaterThan('large')]: {
+                        fontSize: '3em',
+                      },
+                      [media.greaterThan('xlarge')]: {
+                        fontSize: '3.333em',
+                      },
+                    }}>
+                    {name}
+                  </h1>
+                  <h2
+                    css={{
+                      paddingTop: 15,
+                      textAlign: 'center',
+                      fontSize: '1.1em',
+                      letterSpacing: '0.01em',
+
+                      [media.size('xsmall')]: {
+                        marginLeft: 'auto',
+                        marginRight: 'auto',
+                      },
+                      [media.greaterThan('small')]: {
+                        fontSize: '1.3em',
+                      },
+                      [media.greaterThan('large')]: {
+                        fontSize: '1.5em',
+                      },
+
+                      [media.greaterThan('xlarge')]: {
+                        paddingTop: 20,
+                      },
+                      fontFamily: fonts.brand.fontFamily,
+                      fontWeight: 300,
+                    }}>
+                    {tagline}
+                  </h2>
+                  <Flex
+                    valign="center"
+                    direction="column"
+                    halign="center"
+                    css={{
+                      paddingTop: 20,
+                      [media.greaterThan('xlarge')]: {
+                        paddingTop: 40,
+                      },
+                    }}>
+                    <ButtonLink to="/getting-started/" type="primary">
+                      Get started
+                    </ButtonLink>
+                  </Flex>
+                </Container>
               </div>
-            </section>
-          </div>
-        </Container>
+            </div>
+          </header>
+
+          <Container>
+            <div css={sharedStyles.markdown}>
+              <section
+                css={[
+                  sectionStyles,
+                  {
+                    [media.lessThan('medium')]: {
+                      marginTop: 0,
+                      paddingTop: 30,
+                      position: 'relative',
+                    },
+                  },
+                ]}>
+                <div
+                  css={{
+                    display: 'flex',
+                    flexDirection: 'row',
+
+                    [media.lessThan('medium')]: {
+                      flexDirection: 'column',
+                      alignItems: 'center',
+                      textAlign: 'center',
+                    },
+                  }}>
+                  <Marketing title="No sign-up required">
+                    Your users do not need a GitHub or Jira account to
+                    post feedback to your issue tracker.
+                  </Marketing>
+                  <Marketing title="Easy Deployment">
+                    Host your own MicroFeedback backend with one command using either ZEIT now or Heroku.
+                  </Marketing>
+                  <Marketing title="Free and Open Source">
+                    MicroFeedback is free to use and liberally licensed (MIT).
+                  </Marketing>
+                </div>
+              </section>
+            </div>
+          </Container>
+        </div>
         <section
           css={{
             background: colors.dark,
