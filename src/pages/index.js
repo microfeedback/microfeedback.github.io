@@ -210,7 +210,7 @@ class Home extends Component {
                       textAlign: 'center',
                     },
                   }}>
-                  <Marketing title="No sign-up required">
+                  <Marketing title="No Sign-up Required">
                     Your users do not need a GitHub or Jira account to
                     post feedback to your issue tracker.
                   </Marketing>
