@@ -1,8 +1,8 @@
 {
   "assetsByChunkName": {
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-0ae6bde213d32f000069.js",
-      "component---src-pages-index-js-0ae6bde213d32f000069.js.map"
+      "component---src-pages-index-js-dab0d046e5d31c5b8266.js",
+      "component---src-pages-index-js-dab0d046e5d31c5b8266.js.map"
     ],
     "path---backends-microfeedback-github": [
       "path---backends-microfeedback-github-50a09b6b78986eced1ba.js",
@@ -21,8 +21,8 @@
       "path---getting-started-tutorial-2caa9154364d115fa521.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-3a77867f7a42d7defbfe.js",
-      "component---src-layouts-index-js-3a77867f7a42d7defbfe.js.map"
+      "component---src-layouts-index-js-0c45fc85ac7e1232a768.js",
+      "component---src-layouts-index-js-0c45fc85ac7e1232a768.js.map"
     ],
     "path---getting-started": [
       "path---getting-started-409fea0707994def5ba0.js",
@@ -65,8 +65,8 @@
       "path---getting-started-core-concepts-418b3b7736d7740a234f.js.map"
     ],
     "component---src-templates-docs-js": [
-      "component---src-templates-docs-js-3aac8e36d6e0169178d0.js",
-      "component---src-templates-docs-js-3aac8e36d6e0169178d0.js.map"
+      "component---src-templates-docs-js-af84596c9b810bfa7367.js",
+      "component---src-templates-docs-js-af84596c9b810bfa7367.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
