@@ -14,7 +14,7 @@ collecting user feedback.
 Once you have a MicroFeedback backend deployed and a UI component on your site, user feedback
 will be posted to your issue tracker (e.g., on GitHub or in JIRA).
 
-MicroFeedback aims to be provide a **no-cost, easily-deployable, and open
+MicroFeedback aims to provide a **no-cost, easily-deployable, and open
 source solution** for collecting feedback about your website or app.
 
 ## What next?
