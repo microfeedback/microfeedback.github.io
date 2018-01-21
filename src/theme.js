@@ -93,9 +93,18 @@ const linkStyle = {
     borderBottomColor: colors.text,
   },
 };
+
+const headerHeight = 50;
+const headerHeightLg = 60;
+
 const sharedStyles = {
   link: linkStyle,
-
+  header: {
+    height: headerHeight,
+    [media.greaterThan('large')]: {
+      height: headerHeightLg,
+    },
+  },
   articleLayout: {
     container: {
       display: 'flex',
@@ -281,6 +290,15 @@ const sharedStyles = {
     '& img': {
       maxWidth: '100%',
     },
+  },
+};
+
+sharedStyles.fluid = {
+  minHeight: `calc(100vh - ${headerHeight}px)`,
+  marginTop: 50,
+  [media.greaterThan('large')]: {
+    minHeight: `calc(100vh - ${headerHeightLg}px)`,
+    marginTop: 60,
   },
 };
 

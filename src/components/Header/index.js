@@ -4,7 +4,7 @@ import Link from 'gatsby-link';
 import Container from '../Container';
 import ExternalLinkSvg from '../ExternalLinkSvg';
 import logo from '../../logos/logo-48.png';
-import {colors, fonts, media} from '../../theme';
+import {colors, fonts, media, sharedStyles} from '../../theme';
 import {name, githubOrgURL} from '../../site-constants';
 import sectionLists from '../../section-lists';
 import HeaderLink from './HeaderLink';
@@ -27,10 +27,7 @@ const Header = ({location}) => (
           display: 'flex',
           flexDirection: 'row',
           alignItems: 'center',
-          height: 60,
-          [media.lessThan('large')]: {
-            height: 50,
-          },
+          ...sharedStyles.header,
         }}>
         <Link
           css={{

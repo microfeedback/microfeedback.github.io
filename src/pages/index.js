@@ -90,10 +90,7 @@ class Home extends Component {
         />
         <div
           css={{
-            minHeight: 'calc(100vh - 60px)',
-            [media.lessThan('large')]: {
-              minHeight: 'calc(100vh - 50px)',
-            },
+            ...sharedStyles.fluid,
           }}
         >
           <header

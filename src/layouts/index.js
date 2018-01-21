@@ -13,7 +13,6 @@ import {microfeedbackURL} from '../site-constants';
 import '../prism-styles';
 import '../css/reset.css';
 import '../css/microfeedback-button.css';
-import {media} from '../theme';
 
 let microfeedback;
 if (typeof window !== 'undefined') {
@@ -48,12 +47,6 @@ class Template extends Component {
           valign="stretch"
           css={{
             flex: '1 0 auto',
-            marginTop: 60,
-            minHeight: 'calc(100vh - 60px)',
-            [media.lessThan('large')]: {
-              minHeight: 'calc(100vh - 50px)',
-              marginTop: 50,
-            },
           }}>
           {children()}
         </Flex>
