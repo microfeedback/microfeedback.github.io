@@ -211,7 +211,7 @@ class Home extends Component {
                     },
                   }}>
                   <Marketing title="No Sign-up Required">
-                    Your users do not need a GitHub or Jira account to
+                    Your users don&apos;t need a GitHub or Jira account to
                     post feedback to your issue tracker.
                   </Marketing>
                   <Marketing title="Easy Deployment">
