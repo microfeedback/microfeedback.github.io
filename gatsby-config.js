@@ -47,7 +47,7 @@ module.exports = {
           coast: false,
           favicons: true,
           firefox: true,
-          twitter: false,
+          twitter: true,
           yandex: false,
           windows: false,
         },
