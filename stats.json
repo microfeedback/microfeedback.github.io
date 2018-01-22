@@ -1,12 +1,12 @@
 {
   "assetsByChunkName": {
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-6a7e7602aab90f30d8bc.js",
-      "component---src-pages-index-js-6a7e7602aab90f30d8bc.js.map"
+      "component---src-pages-index-js-3dfb6244b92fcdb02c36.js",
+      "component---src-pages-index-js-3dfb6244b92fcdb02c36.js.map"
     ],
     "path---backends-microfeedback-github": [
-      "path---backends-microfeedback-github-50a09b6b78986eced1ba.js",
-      "path---backends-microfeedback-github-50a09b6b78986eced1ba.js.map"
+      "path---backends-microfeedback-github-6bc46b28c89a5e8b010b.js",
+      "path---backends-microfeedback-github-6bc46b28c89a5e8b010b.js.map"
     ],
     "path---backends-writing-your-own-backend": [
       "path---backends-writing-your-own-backend-417fbe9a7700650f4416.js",
@@ -21,12 +21,12 @@
       "path---getting-started-tutorial-2caa9154364d115fa521.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-ba1cecea6b4001f6efea.js",
-      "component---src-layouts-index-js-ba1cecea6b4001f6efea.js.map"
+      "component---src-layouts-index-js-e9dc6fab501e04752254.js",
+      "component---src-layouts-index-js-e9dc6fab501e04752254.js.map"
     ],
     "path---getting-started": [
-      "path---getting-started-6e122ffbd28244a745e1.js",
-      "path---getting-started-6e122ffbd28244a745e1.js.map"
+      "path---getting-started-3152dfcf06002a737b43.js",
+      "path---getting-started-3152dfcf06002a737b43.js.map"
     ],
     "path---ui-components": [
       "path---ui-components-ae119a526b2ca67e8927.js",
@@ -55,34 +55,34 @@
       "path---backends-10c2bbdf1140ac071644.js.map"
     ],
     "app": [
-      "app-9fd6c7b4cf8e9172ccfd.js",
+      "app-5123c6b38990b188e582.js",
       "build-js-styles.css",
-      "app-9fd6c7b4cf8e9172ccfd.js.map",
+      "app-5123c6b38990b188e582.js.map",
       "build-js-styles.css.map"
     ],
     "path---getting-started-core-concepts": [
-      "path---getting-started-core-concepts-418b3b7736d7740a234f.js",
-      "path---getting-started-core-concepts-418b3b7736d7740a234f.js.map"
+      "path---getting-started-core-concepts-8c043cf9d6736bf32748.js",
+      "path---getting-started-core-concepts-8c043cf9d6736bf32748.js.map"
     ],
     "component---src-templates-docs-js": [
-      "component---src-templates-docs-js-f51f76138199ae9aa666.js",
-      "component---src-templates-docs-js-f51f76138199ae9aa666.js.map"
+      "component---src-templates-docs-js-ca45bcec0b60192ca625.js",
+      "component---src-templates-docs-js-ca45bcec0b60192ca625.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
       "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---getting-started-deployment": [
-      "path---getting-started-deployment-53b855c6d229ef9a8e97.js",
-      "path---getting-started-deployment-53b855c6d229ef9a8e97.js.map"
+      "path---getting-started-deployment-fa81c03170465e716afc.js",
+      "path---getting-started-deployment-fa81c03170465e716afc.js.map"
     ],
     "path---ui-components-microfeedback-button": [
       "path---ui-components-microfeedback-button-18343cdb97a860ef1341.js",
       "path---ui-components-microfeedback-button-18343cdb97a860ef1341.js.map"
     ],
     "path---backends-microfeedback-jira": [
-      "path---backends-microfeedback-jira-45ed724a4d35fa99b92a.js",
-      "path---backends-microfeedback-jira-45ed724a4d35fa99b92a.js.map"
+      "path---backends-microfeedback-jira-c7f76e5b5b443b0e703a.js",
+      "path---backends-microfeedback-jira-c7f76e5b5b443b0e703a.js.map"
     ]
   }
 }
