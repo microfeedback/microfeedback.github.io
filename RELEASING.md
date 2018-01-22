@@ -1,7 +1,3 @@
 # Releasing
 
-Deploy to GitHub pages using
-
-```
-npm run deploy
-```
+Travis CI will automatically build and deploy updates to the `dev` branch.
