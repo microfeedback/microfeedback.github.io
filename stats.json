@@ -21,8 +21,8 @@
       "path---getting-started-tutorial-2caa9154364d115fa521.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-ee2a51438219df8c7f10.js",
-      "component---src-layouts-index-js-ee2a51438219df8c7f10.js.map"
+      "component---src-layouts-index-js-ba1cecea6b4001f6efea.js",
+      "component---src-layouts-index-js-ba1cecea6b4001f6efea.js.map"
     ],
     "path---getting-started": [
       "path---getting-started-6e122ffbd28244a745e1.js",
@@ -37,13 +37,13 @@
       "path---index-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-404-js": [
-      "component---src-pages-404-js-cd51d374be13da4bdeeb.js",
-      "component---src-pages-404-js-cd51d374be13da4bdeeb.js.map"
+      "component---src-pages-404-js-66e31a5e2866a0831424.js",
+      "component---src-pages-404-js-66e31a5e2866a0831424.js.map"
     ],
     "commons": [
-      "commons-fe5e34493f7c452eefea.js",
+      "commons-ba6fdbcd14745af30fa5.js",
       "build-js-styles.css",
-      "commons-fe5e34493f7c452eefea.js.map",
+      "commons-ba6fdbcd14745af30fa5.js.map",
       "build-js-styles.css.map"
     ],
     "path---404-html": [
@@ -55,9 +55,9 @@
       "path---backends-10c2bbdf1140ac071644.js.map"
     ],
     "app": [
-      "app-0fafa19521f6b4332f28.js",
+      "app-ccdceedc3c2576edb78b.js",
       "build-js-styles.css",
-      "app-0fafa19521f6b4332f28.js.map",
+      "app-ccdceedc3c2576edb78b.js.map",
       "build-js-styles.css.map"
     ],
     "path---getting-started-core-concepts": [
@@ -65,8 +65,8 @@
       "path---getting-started-core-concepts-418b3b7736d7740a234f.js.map"
     ],
     "component---src-templates-docs-js": [
-      "component---src-templates-docs-js-af84596c9b810bfa7367.js",
-      "component---src-templates-docs-js-af84596c9b810bfa7367.js.map"
+      "component---src-templates-docs-js-f51f76138199ae9aa666.js",
+      "component---src-templates-docs-js-f51f76138199ae9aa666.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
