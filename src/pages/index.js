@@ -211,11 +211,11 @@ class Home extends Component {
                     },
                   }}>
                   <Marketing title="No Sign-up Required">
-                    Your users don&apos;t need a GitHub or Jira account to
+                    Your users won&apos;t need a GitHub or Jira account to
                     post feedback to your issue tracker.
                   </Marketing>
                   <Marketing title="Easy Deployment">
-                    Host your own MicroFeedback backend with one command using either ZEIT now or Heroku.
+                    Deploy in seconds using either ZEIT now or Heroku.
                   </Marketing>
                   <Marketing title="Free and Open Source">
                     MicroFeedback is free to use and liberally licensed (MIT).

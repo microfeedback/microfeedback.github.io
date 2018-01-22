@@ -33,12 +33,48 @@ The following **query** parameters are optional:
 multiple times.
 - `priorityID`: Priority ID to assign to issues.
 
-## Deploy using ZEIT now
+## Deploy to Now
+
+Deploy to now using the `now` CLI:
 
 ```
 now microfeedback/microfeedback-jira
 ```
 
-## Full documentation
+You will be prompted to entered the required environment variables.
 
-See the project's [README](https://github.com/MicroFeedback/microfeedback-jira) for full API documentation.
+## Deploy to Heroku
+
+If you prefer to deploy to Heroku, use the deployment button below or
+deploy with Git.
+
+### One click deploy
+
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/microfeedback/microfeedback-jira)
+
+### Deployment with git
+
+```
+git clone https://github.com/microfeedback/microfeedback-jira.git
+cd microfeedback-jira
+heroku create
+heroku config:set JIRA_USERNAME=smeagol@lotr.org JIRA_PASSWORD=myprecious JIRA_HOST=onering.atlassian.net
+git push heroku master
+```
+
+## Configuration (Environment variables)
+
+Configuration is defined through environment variables and can be passed
+when you deploy microfeedback-jira.
+
+```
+now microfeedback/microfeedback-jira -e JIRA_USERNAME=foo@bar.com -e JIRA_PASSWORD=secret \
+  -e JIRA_HOST=company.atlassian.net
+```
+
+The following envvars must be set:
+
+- `JIRA_HOST`: JIRA host, e.g., `'yourcompany.atlassian.net'`
+- `JIRA_USERNAME` and `JIRA_PASSWORD`: Credentials for the
+                                                  JIRA user that will
+                                                  post issues

@@ -3,8 +3,8 @@
     - id: index
       title: Welcome!
     - id: core-concepts
-      title: Core concepts
+      title: Core Concepts
     - id: deployment
       title: Deployment
-    - id: tutorial
-      title: Tutorial (Coming Soon)
+    # - id: tutorial
+    #   title: Tutorial (Coming Soon)

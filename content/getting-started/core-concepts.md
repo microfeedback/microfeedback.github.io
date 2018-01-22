@@ -1,5 +1,5 @@
 ---
-title: Core concepts
+title: Core Concepts
 ---
 
 The MicroFeedback project is broken down into two components:
