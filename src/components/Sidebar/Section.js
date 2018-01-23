@@ -54,6 +54,7 @@ const Section = ({
             }}>
             <SectionLink
               isActive={!activeItemId && sectionIsActive}
+              isSubItemActive={sectionIsActive && activeItemId}
               item={item}
               directory={directory}
             />

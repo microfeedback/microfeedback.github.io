@@ -21,6 +21,10 @@ const activeLinkBefore = {
   },
 };
 
+const subItemActiveLinkBefore = {
+  borderLeft: `4px solid ${colors.primary}`,
+};
+
 const linkCss = {
   color: colors.text,
   display: 'inline-block',
@@ -33,13 +37,13 @@ const linkCss = {
   },
 };
 
-const SectionLink = ({isActive, item, directory}) => {
+const SectionLink = ({isActive, isSubItemActive, item, directory}) => {
   const to = item.href || slugify(item.id, directory);
   return (
     <Link
       css={[linkCss, isActive && activeLinkCss]}
       to={to}>
-      {isActive && <span css={activeLinkBefore} />}
+      {(isActive || isSubItemActive) && <span css={[activeLinkBefore, isSubItemActive && subItemActiveLinkBefore]} />}
       {item.title}
     </Link>
   );
