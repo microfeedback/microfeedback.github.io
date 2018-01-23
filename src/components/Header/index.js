@@ -6,7 +6,7 @@ import ExternalLinkSvg from '../ExternalLinkSvg';
 import logo from '../../logos/logo-48.png';
 import {colors, fonts, media, sharedStyles} from '../../theme';
 import {name, githubOrgURL} from '../../site-constants';
-import sectionLists from '../../section-lists';
+import navSections from '../../nav-sections';
 import HeaderLink from './HeaderLink';
 
 const Header = ({location}) => (
@@ -97,20 +97,16 @@ const Header = ({location}) => (
             [media.greaterThan('xlarge')]: {
               width: null,
             },
-            // [media.lessThan('small')]: {
-            //   maskImage:
-            //     'linear-gradient(to right, transparent, black 20px, black 90%, transparent)',
-            // },
           }}>
-          {sectionLists.map(section => {
-            const title = section[2];
-            const id = section[0];
+          {navSections.map(section => {
+            const url = section[0];
+            const title = section[1];
             return (
               <HeaderLink
-                key={id}
-                isActive={location.pathname.includes(`/${id}/`)}
+                key={url}
+                isActive={location.pathname.includes(url)}
                 title={title}
-                to={`/${id}/`}
+                to={url}
               />
             );
           })}

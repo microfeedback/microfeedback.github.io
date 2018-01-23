@@ -2,7 +2,7 @@ import React from 'react';
 import Container from '../Container';
 import MetaTitle from '../MetaTitle';
 import {colors, media} from '../../theme';
-import sectionLists from '../../section-lists';
+import navSections from '../../nav-sections';
 import {copyrightOwner, githubOrgURL, githubURL, copyrightOwnerURL} from '../../site-constants';
 import FooterLink from './FooterLink';
 import FooterNav from './FooterNav';
@@ -53,11 +53,11 @@ const Footer = ({layoutHasSidebar = false}) => (
           }}>
           <FooterNav layoutHasSidebar={layoutHasSidebar}>
             <MetaTitle onDark>Docs</MetaTitle>
-            {sectionLists.map(section => {
-              const title = section[2];
-              const id = section[0];
+            {navSections.map(section => {
+              const url = section[0];
+              const title = section[1];
               return (
-                <FooterLink key={id} to={`/${id}/`}>
+                <FooterLink key={url} to={url}>
                   {title}
                 </FooterLink>
               );
