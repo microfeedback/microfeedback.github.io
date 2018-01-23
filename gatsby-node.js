@@ -1,6 +1,8 @@
 'use strict';
 
 const {resolve, dirname, basename} = require('path');
+const fs = require('fs');
+const yaml = require('js-yaml');
 
 exports.createPages = async ({graphql, boundActionCreators}) => {
   const {createPage, createRedirect} = boundActionCreators;
@@ -102,6 +104,29 @@ exports.onCreateNode = ({node, boundActionCreators, getNode}) => {
           slug = `/${relativePath.replace('.md', '/')}`;
         }
       }
+
+      let sectionList;
+      const navPath = resolve('content', dir, 'nav.yml');
+      if (fs.existsSync(navPath)) {
+        sectionList = yaml.safeLoad(fs.readFileSync(navPath));
+        sectionList.forEach(list => {
+          list.items.forEach(item => {
+            if (item.id === 'index') {
+              item.slug = `/${dir}/`;
+            } else {
+              item.slug = `/${dir}/${item.id}`;
+            }
+          });
+        });
+      } else {
+        sectionList = [];
+      }
+
+      createNodeField({
+        node,
+        name: 'sectionList',
+        value: JSON.stringify(sectionList),
+      });
 
       // Used to generate URLs
       createNodeField({
