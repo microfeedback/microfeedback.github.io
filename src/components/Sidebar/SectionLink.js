@@ -37,10 +37,11 @@ const linkCss = {
   },
 };
 
-const SectionLink = ({isActive, isSubItemActive, item, directory}) => {
+const SectionLink = ({isActive, isSubItemActive, item, directory, onClick}) => {
   const to = item.href || slugify(item.id, directory);
   return (
     <Link
+      onClick={onClick}
       css={[linkCss, isActive && activeLinkCss]}
       to={to}>
       {(isActive || isSubItemActive) && <span css={[activeLinkBefore, isSubItemActive && subItemActiveLinkBefore]} />}

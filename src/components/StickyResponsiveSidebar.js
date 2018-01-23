@@ -97,7 +97,7 @@ class StickyResponsiveSidebar extends Component {
           <div
             style={{
               transform: `translate(0px, ${menuOffset}px)`,
-              transition: 'transform 0.5s ease',
+              transition: 'transform 0.2s ease',
             }}
             css={{
               marginTop: 60,

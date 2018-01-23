@@ -4,13 +4,14 @@ import isItemActive from '../../utils/isItemActive';
 import MetaTitle from '../MetaTitle';
 import SectionLink from './SectionLink';
 
-const SubItems = ({items, isScrollSync, activeItemId, indent = 20}) => {
+const SubItems = ({items, isScrollSync, activeItemId, indent = 20, onLinkClick}) => {
   return (
     <div css={{lineHeight: 1.3}}>
       {items.map(subitem => (
         <div key={subitem.id}>
           <div css={{marginLeft: indent * (subitem.depth - 1)}}>
             <SectionLink
+              onClick={onLinkClick}
               isActive={
                 isScrollSync
                   ? activeItemId === subitem.id
@@ -32,6 +33,7 @@ const Section = ({
   isScrollSync,
   location,
   section,
+  onLinkClick,
   indent = 20,
 }) => (
   <div>
@@ -85,6 +87,7 @@ const Section = ({
                   activeItemId={activeItemId}
                   indent={indent}
                   isScrollSync={isScrollSync}
+                  onLinkClick={onLinkClick}
                   items={item.subitems}
                 />
               )}
