@@ -1,4 +1,4 @@
-import slugify from 'slugify';
+import GitHubSlugger from 'github-slugger';
 import React from 'react';
 import PropTypes from 'prop-types';
 import MicroFeedbackButtonExamples from '../components/MicroFeedbackButtonExamples';
@@ -7,6 +7,8 @@ import {name} from '../site-constants';
 import isItemActive from '../utils/isItemActive';
 
 import '../css/mf-button-preview.css';
+
+const slugger = new GitHubSlugger();
 
 const Docs = ({data, location}) => {
   const sectionList = JSON.parse(data.markdownRemark.fields.sectionList);
@@ -17,7 +19,8 @@ const Docs = ({data, location}) => {
         item.subitems = data.markdownRemark.headings
           .filter(({value}) => Boolean(value))
           .map(({value, depth}) => {
-            const id = slugify(value, {lower: true});
+            slugger.reset();
+            const id = slugger.slug(value);
             return {
               depth,
               href: `${data.markdownRemark.fields.slug}#${id}`,
