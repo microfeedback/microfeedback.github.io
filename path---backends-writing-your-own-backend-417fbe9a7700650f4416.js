@@ -1,2 +1,0 @@
-webpackJsonp([40442824073845],{365:function(n,e){n.exports={data:{markdownRemark:{html:"<p><em>Coming soon</em></p>",frontmatter:{title:"Writing Your Own Backend"},fields:{path:"backends/writing-your-own-backend.md",slug:"/backends/writing-your-own-backend/",dir:"backends"}}},pathContext:{slug:"/backends/writing-your-own-backend/"}}}});
-//# sourceMappingURL=path---backends-writing-your-own-backend-417fbe9a7700650f4416.js.map

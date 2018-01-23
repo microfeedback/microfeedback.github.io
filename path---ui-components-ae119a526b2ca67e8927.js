@@ -1,2 +1,0 @@
-webpackJsonp([0x7ac91d00ded8],{373:function(o,n){o.exports={data:{markdownRemark:{html:'<p>UI components to add to your website.</p>\n<p>Officially-supported components:</p>\n<ul>\n<li><a href="/ui-components/microfeedback-button">microfeedback-button</a></li>\n</ul>',frontmatter:{title:"UI Components"},fields:{path:"ui-components/index.md",slug:"/ui-components/",dir:"ui-components"}}},pathContext:{slug:"/ui-components/"}}}});
-//# sourceMappingURL=path---ui-components-ae119a526b2ca67e8927.js.map
