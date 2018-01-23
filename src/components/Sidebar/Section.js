@@ -1,9 +1,29 @@
-import slugify from 'slugify';
 import React from 'react';
 import {colors, media} from '../../theme';
 import isItemActive from '../../utils/isItemActive';
 import MetaTitle from '../MetaTitle';
 import SectionLink from './SectionLink';
+
+const SubItems = ({items, isScrollSync, activeItemId, indent = 20}) => {
+  return (
+    <div css={{lineHeight: 1.3}}>
+      {items.map(subitem => (
+        <div key={subitem.id}>
+          <div css={{marginLeft: indent * (subitem.depth - 1)}}>
+            <SectionLink
+              isActive={
+                isScrollSync
+                  ? activeItemId === subitem.id
+                  : isItemActive(location, subitem)
+              }
+              item={subitem}
+            />
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
 
 const Section = ({
   activeItemId,
@@ -50,7 +70,7 @@ const Section = ({
             key={item.id}
             css={{
               marginTop: 5,
-              lineHeight: 1.4,
+              lineHeight: 1.6,
             }}>
             <SectionLink
               isActive={!activeItemId && sectionIsActive}
@@ -60,24 +80,14 @@ const Section = ({
             />
 
             {sectionIsActive &&
-              item.subitems.length &&
-              item.subitems
-                .map(subitem => {
-                  return (
-                    <div
-                      key={subitem.id}
-                      css={{marginLeft: indent * (subitem.depth - 1)}}>
-                      <SectionLink
-                        isActive={
-                          isScrollSync
-                            ? activeItemId === subitem.id
-                            : isItemActive(location, subitem)
-                        }
-                        item={subitem}
-                      />
-                    </div>
-                  );
-                })}
+              item.subitems.length && (
+                <SubItems
+                  activeItemId={activeItemId}
+                  indent={indent}
+                  isScrollSync={isScrollSync}
+                  items={item.subitems}
+                />
+              )}
           </div>
         );
       })}
