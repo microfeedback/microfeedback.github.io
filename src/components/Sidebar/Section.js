@@ -1,3 +1,4 @@
+import slugify from 'slugify';
 import React from 'react';
 import {colors, media} from '../../theme';
 import isItemActive from '../../utils/isItemActive';
@@ -11,6 +12,7 @@ const Section = ({
   isScrollSync,
   location,
   section,
+  indent = 20,
 }) => (
   <div>
     <a
@@ -41,40 +43,43 @@ const Section = ({
           display: isActive ? 'block' : 'none',
         },
       }}>
-      {section.items.map(item => (
-        <div
-          key={item.id}
-          css={{
-            marginTop: 5,
-          }}>
-          <SectionLink
-            isActive={
-              isScrollSync
-                ? activeItemId === item.id
-                : isItemActive(location, item)
-            }
-            item={item}
-            directory={directory}
-          />
+      {section.items.map(item => {
+        const sectionIsActive = isItemActive(location, item);
+        return (
+          <div
+            key={item.id}
+            css={{
+              marginTop: 5,
+              lineHeight: 1.4,
+            }}>
+            <SectionLink
+              isActive={!activeItemId && sectionIsActive}
+              item={item}
+              directory={directory}
+            />
 
-          {item.subitems && (
-            <div css={{marginLeft: 20}}>
-              {item.subitems.map(subitem => (
-                <div key={subitem.id}>
-                  <SectionLink
-                    isActive={
-                      isScrollSync
-                        ? activeItemId === subitem.id
-                        : isItemActive(location, subitem)
-                    }
-                    item={subitem}
-                  />
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
-      ))}
+            {sectionIsActive &&
+              item.subitems.length &&
+              item.subitems
+                .map(subitem => {
+                  return (
+                    <div
+                      key={subitem.id}
+                      css={{marginLeft: indent * (subitem.depth - 1)}}>
+                      <SectionLink
+                        isActive={
+                          isScrollSync
+                            ? activeItemId === subitem.id
+                            : isItemActive(location, subitem)
+                        }
+                        item={subitem}
+                      />
+                    </div>
+                  );
+                })}
+          </div>
+        );
+      })}
     </div>
   </div>
 );

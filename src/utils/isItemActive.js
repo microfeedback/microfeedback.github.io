@@ -13,7 +13,9 @@ const isItemActive = (location, item) => {
       return location.hash === toAnchor(item.href);
     }
   }
-  const slugId = location.pathname.split('/').slice(-1)[0];
+  // Trim trailing slash
+  const pathname = item.id !== 'index' && location.pathname.endsWith('/') ? location.pathname.substr(0, location.pathname.length - 1) : location.pathname;
+  const slugId = pathname.split('/').slice(-1)[0];
   if (!slugId) {
     return item.id === 'index';
   }

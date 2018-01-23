@@ -34,10 +34,11 @@ const linkCss = {
 };
 
 const SectionLink = ({isActive, item, directory}) => {
+  const to = item.href || slugify(item.id, directory);
   return (
     <Link
       css={[linkCss, isActive && activeLinkCss]}
-      to={slugify(item.id, directory)}>
+      to={to}>
       {isActive && <span css={activeLinkBefore} />}
       {item.title}
     </Link>

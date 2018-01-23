@@ -21,7 +21,7 @@ const MarkdownPage = ({
   titlePostfix = '',
 }) => {
   const titlePrefix = markdownRemark.frontmatter.title || '';
-
+  const headings = markdownRemark.headings || [];
   return (
     <Flex
       direction="column"
@@ -75,6 +75,7 @@ const MarkdownPage = ({
                 )}
                 location={location}
                 sectionList={sectionList}
+                headings={headings}
               />
             </div>
           </div>

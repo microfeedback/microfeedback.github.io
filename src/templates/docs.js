@@ -1,3 +1,4 @@
+import slugify from 'slugify';
 import React from 'react';
 import PropTypes from 'prop-types';
 import MicroFeedbackButtonExamples from '../components/MicroFeedbackButtonExamples';
@@ -11,6 +12,21 @@ const Docs = ({data, location}) => {
   const sectionList = sectionLists.filter(
     each => each[0] === data.markdownRemark.fields.dir
   )[0][1];
+  sectionList.forEach(list => {
+    list.items.forEach(item => {
+      item.subitems = data.markdownRemark.headings
+        .filter(({value}) => Boolean(value))
+        .map(({value, depth}) => {
+          const slug = slugify(value, {lower: true});
+          return {
+            depth,
+            href: `${data.markdownRemark.fields.slug}#${slug}`,
+            id: slug,
+            title: value,
+          };
+        });
+    });
+  });
   return [
     <MarkdownPage
       key="content"
@@ -37,6 +53,10 @@ export const pageQuery = graphql`
   query TemplateDocsMarkdown($slug: String!) {
     markdownRemark(fields: {slug: {eq: $slug}}) {
       html
+      headings {
+        value
+        depth
+      }
       frontmatter {
         title
       }
