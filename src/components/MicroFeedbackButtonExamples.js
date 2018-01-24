@@ -11,7 +11,6 @@ export default class MicroFeedbackButtonExamples extends React.Component {
   componentDidMount() {
     this.custom = microfeedback($('#custom-button')[0], {
       title: 'Custom button example',
-      text: 'You can bind the feedback dialog to any element.',
     });
     this.customDialog = microfeedback($('#custom-dialog')[0], {
       title: 'Custom dialog example',

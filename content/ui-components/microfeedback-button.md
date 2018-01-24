@@ -66,7 +66,6 @@ as the first argument:
 microfeedback(document.getElementById('custom-button'), {
   url: null,
   title: 'Custom button example',
-  text: 'You can bind the feedback dialog to any element.',
 });
 ```
 <button id="custom-button" class="mf-button-preview">Preview</button>
