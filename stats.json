@@ -5,24 +5,24 @@
       "component---src-pages-index-js-3dfb6244b92fcdb02c36.js.map"
     ],
     "path---backends-microfeedback-github": [
-      "path---backends-microfeedback-github-55f44da137cc5774f557.js",
-      "path---backends-microfeedback-github-55f44da137cc5774f557.js.map"
+      "path---backends-microfeedback-github-c450e64b49723dfc163d.js",
+      "path---backends-microfeedback-github-c450e64b49723dfc163d.js.map"
     ],
     "path---backends-writing-your-own-backend": [
-      "path---backends-writing-your-own-backend-b300d1760904913d1f17.js",
-      "path---backends-writing-your-own-backend-b300d1760904913d1f17.js.map"
+      "path---backends-writing-your-own-backend-61e793553dde70d71b2c.js",
+      "path---backends-writing-your-own-backend-61e793553dde70d71b2c.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
       "path----557518bd178906f8d58a.js.map"
     ],
     "path---getting-started-tutorial": [
-      "path---getting-started-tutorial-d08f3ef61e60045bf430.js",
-      "path---getting-started-tutorial-d08f3ef61e60045bf430.js.map"
+      "path---getting-started-tutorial-e79868b47593a2976f1a.js",
+      "path---getting-started-tutorial-e79868b47593a2976f1a.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-799aab5ebd4d59bddadf.js",
-      "component---src-layouts-index-js-799aab5ebd4d59bddadf.js.map"
+      "component---src-layouts-index-js-9e464a7730d88ab64ee5.js",
+      "component---src-layouts-index-js-9e464a7730d88ab64ee5.js.map"
     ],
     "path---getting-started": [
       "path---getting-started-8da228b8f6134012662d.js",
@@ -41,9 +41,9 @@
       "component---src-pages-404-js-66e31a5e2866a0831424.js.map"
     ],
     "commons": [
-      "commons-ba6fdbcd14745af30fa5.js",
+      "commons-aa99ac5490464f615425.js",
       "build-js-styles.css",
-      "commons-ba6fdbcd14745af30fa5.js.map",
+      "commons-aa99ac5490464f615425.js.map",
       "build-js-styles.css.map"
     ],
     "path---404-html": [
@@ -55,34 +55,34 @@
       "path---backends-effc014057676b64793c.js.map"
     ],
     "app": [
-      "app-9fd6c7b4cf8e9172ccfd.js",
+      "app-2417acfdacc98d6c194a.js",
       "build-js-styles.css",
-      "app-9fd6c7b4cf8e9172ccfd.js.map",
+      "app-2417acfdacc98d6c194a.js.map",
       "build-js-styles.css.map"
     ],
     "path---getting-started-core-concepts": [
-      "path---getting-started-core-concepts-58f70366bc3c8d064d4d.js",
-      "path---getting-started-core-concepts-58f70366bc3c8d064d4d.js.map"
+      "path---getting-started-core-concepts-85dac84a237a970e46b2.js",
+      "path---getting-started-core-concepts-85dac84a237a970e46b2.js.map"
     ],
     "component---src-templates-docs-js": [
-      "component---src-templates-docs-js-abefab06c988a6425234.js",
-      "component---src-templates-docs-js-abefab06c988a6425234.js.map"
+      "component---src-templates-docs-js-315cc3ca42d1e8f4f6d7.js",
+      "component---src-templates-docs-js-315cc3ca42d1e8f4f6d7.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
       "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---getting-started-deployment": [
-      "path---getting-started-deployment-7bc6b6ddf25c53fc0afa.js",
-      "path---getting-started-deployment-7bc6b6ddf25c53fc0afa.js.map"
+      "path---getting-started-deployment-a7dddf8dd7e76cd565de.js",
+      "path---getting-started-deployment-a7dddf8dd7e76cd565de.js.map"
     ],
     "path---ui-components-microfeedback-button": [
-      "path---ui-components-microfeedback-button-59f2f731a07becf78938.js",
-      "path---ui-components-microfeedback-button-59f2f731a07becf78938.js.map"
+      "path---ui-components-microfeedback-button-44e07db77a53b5ef02ce.js",
+      "path---ui-components-microfeedback-button-44e07db77a53b5ef02ce.js.map"
     ],
     "path---backends-microfeedback-jira": [
-      "path---backends-microfeedback-jira-a9221e5d34f009f285d1.js",
-      "path---backends-microfeedback-jira-a9221e5d34f009f285d1.js.map"
+      "path---backends-microfeedback-jira-dc49f6954b59486ff28f.js",
+      "path---backends-microfeedback-jira-dc49f6954b59486ff28f.js.map"
     ]
   }
 }
