@@ -23,7 +23,6 @@ class Template extends Component {
   componentDidMount() {
     this.microfeedback = microfeedback({
       url: microfeedbackURL,
-      reverseButtons: true,
     });
   }
   componentWillUnmount() {

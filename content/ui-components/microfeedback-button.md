@@ -64,8 +64,8 @@ microfeedback({
 
 ## Binding to an element
 
-The feedback dialog can be bound to any element. Just pass the element
-as the first argument:
+The feedback dialog can be bound to any element by passing an
+`HTMLElement` as the first argument:
 
 ```javascript
 microfeedback(document.getElementById('custom-button'), {
@@ -85,6 +85,7 @@ sweetalert2's customization options are available to you.
 microfeedback(document.getElementById('custom-dialog'), {
   url: null,
   title: 'Custom dialog example',
+  text: 'See the sweetalert2 docs for available customization options.',
   placeholder: "What's on your mind?",
   cancelButtonText: 'Discard',
   confirmButtonText: 'Send it!',
@@ -119,32 +120,120 @@ microfeedback(document.getElementById('show-dialog'), {
 
 <button id="show-dialog" class="mf-button-preview">Preview</button>
 
-## Custom success message
+## Success message after response
 
-You can configure the "thank you" dialog using the `beforeSend` option.
+By default, the success message will be shown as soon as the user submits their input.
+Set `optimistic: false` if you want to show the message only after the request to the backend is complete.
 
-Again, use `btn.alert()` to display the dialog. Return its value so that the
+```javascript
+microfeedback(document.getElementById('non-optimistic'), {
+  title: 'Non-optimistic example',
+  text: 'The success dialog will not be displayed until the fake request is finished.',
+  optimistic: false,
+  // Simulate requests to backend
+  url: true,
+  sendRequest() {
+    return new Promise(resolve => {
+      window.setTimeout(() => {
+        resolve();
+      }, 2000);
+    });
+  },
+});
+```
+
+<button id="non-optimistic" class="mf-button-preview">Preview</button>
+
+## Handling errors
+
+When `optimistic` is set to `false`, use the `onFailure()` hook to
+handle error responses.
+
+
+```javascript
+microfeedback(document.getElementById('handling-failure'), {
+  title: 'Handling errors',
+  html: 'Use <code>onFailure</code> to handle errors.',
+  optimistic: false,
+  onFailure(btn) {
+    return btn.alert('Oops', 'Something terrible happened!', 'error');
+  },
+  // Simulate a failed request
+  url: true,
+  sendRequest() {
+    return new Promise((resolve, reject) => {
+      window.setTimeout(() => {
+        reject();
+      }, 2000);
+    });
+  },
+}),
+```
+
+<button id="handling-failure" class="mf-button-preview">Preview</button>
+
+## Customizing the success message
+
+Use the `showSuccessDialog()` hook to customize the success message. Again, use `btn.alert()` to display the dialog. Return its value so that the
 input will get passed to other methods.
 
 ```javascript
 microfeedback(document.getElementById('custom-success'), {
   url: null,
   title: 'Success message example',
-  html: 'Use <code>beforeSend()</code> to create a custom success dialog.',
-  beforeSend(btn) {
+  html: 'Use <code>showSuccessDialog</code> to create a custom success dialog.',
+  width: 600,
+  showSuccessDialog(btn, input) {
     return btn.alert({
       title: "❤️ You're amazing!",
-      text: 'We appreciate you.',
+      text: `You wrote: "${input.value}"`,
       confirmButtonText: 'Continue being amazing',
     });
-  }
+  },
+  },
 });
 ```
 <button id="custom-success" class="mf-button-preview">Preview</button>
 
-Note: `beforeSend` gets called immediately after the user submits
-their input. It does **not** wait for a response from the MicroFeedback
-backend.
+By default, the message will be shown immediately after the user submits
+their input.
+
+If you want to show a custom message based on the response from the
+backend, set `optimistic` to `false`. The `showSuccessDialog()` hook
+will receive the response as its third argument.
+
+```javascript
+microfeedback(document.getElementById('custom-success-non-optimistic'), {
+  title: 'Custom success message after response',
+  html: 'Use <code>showSuccessDialog</code> together with <code>optimistic: false</code> ' +
+        'to display a custom message after the request finishes.',
+  width: 600,
+  optimistic: false,
+  showSuccessDialog(btn, input, response) {
+    return btn.alert(
+      'Issue posted',
+      `You wrote: "${input.value}".<br>Your issue number is: ${response.result.issueNo}`,
+      'info'
+    );
+  },
+  // Simulate requests to backend
+  url: true,
+  sendRequest(btn, url, payload) {
+    return new Promise(resolve => {
+      window.setTimeout(() => {
+        resolve({
+          result: {
+            body: payload.body,
+            issueNo: Math.floor(Math.random() * 1000),
+          },
+        });
+      }, 2000);
+    });
+  },
+});
+```
+
+<button id="custom-success-non-optimistic" class="mf-button-preview">Preview</button>
 
 ## Advanced: Multiple inputs
 
@@ -176,7 +265,7 @@ microfeedback(document.getElementById('btn-multi-input'), {
       confirmButtonText: 'Send',
     });
   },
-  beforeSend(btn, {value: {input, followup}}) {
+  showSuccessDialog(btn, {value: {input, followup}}) {
     const text = followup ? 'We will contact you soon.' : 'We will not contact you in the future.';
     return btn.alert({
       title: 'Thank you for your feedback!',
@@ -201,8 +290,8 @@ There are a few interesting bits here:
 
 1. First, we use `showDialog` to programmatically create our custom dialog.
 1. We pass `html` to `btn.alert` to specify the HTML content of the dialog.
-1. `preConfirm` returns the value that will be passed to `beforeSend` and `getPayload`.
-1. `beforeSend` receives the input values from `preConfirm`. We customize the "Thank you" message based on
+1. `preConfirm` returns the value that will be passed to `showSuccessDialog` and `getPayload`.
+1. `showSuccessDialog` receives the input values from `preConfirm`. We customize the "Thank you" message based on
    whether the user checked the checkbox.
 1. `getPayload` receives the input values from `preConfirm` and returns the JSON payload that will be sent to the
    MicroFeedback backend.
@@ -234,6 +323,6 @@ You can also style the button in CSS.
 See the [sweetalert2 docs](https://sweetalert2.github.io/) for styling
 the input dialog.
 
-## Full documentation
+## API reference
 
 See microfeedback-button's [README](https://github.com/MicroFeedback/microfeedback-button) for a full API reference.
