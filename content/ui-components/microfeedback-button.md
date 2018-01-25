@@ -1,5 +1,10 @@
 ---
 title: microfeedback-button
+# This is necessary to ensure that MicroFeedbackButtonExamples mounts
+# when there's a trailing slash
+redirect_from:
+  - path: /ui-components/microfeedback-button/
+    browser: true
 ---
 
 microfeedback-button adds a configurable feedback button to your website.
