@@ -61,8 +61,21 @@ exports.createPages = async ({graphql, boundActionCreators}) => {
         redirect = [redirect];
       }
 
-      redirect.forEach(fromPath => {
-        if (redirectToSlugMap[fromPath] != null) {  // eslint-disable-line no-eq-null, eqeqeq
+      redirect.forEach(each => {
+        let fromPath;
+        let redirectInBrowser;
+        if (typeof each === 'string') {
+          fromPath = each;
+          // redirect in browser if not specified
+          redirectInBrowser = true;
+        } else {
+          fromPath = each.path;
+          redirectInBrowser = each.browser === undefined ? true : each.browser;
+        }
+        // Ensure fromPath has a leading slash
+        fromPath = fromPath.startsWith('/') ? fromPath : `/${fromPath}`;
+        // eslint-disable-next-line no-eq-null, eqeqeq
+        if (redirectToSlugMap[fromPath] != null) {
           console.error(
             `Duplicate redirect detected from "${fromPath}" to:\n` +
               `* ${redirectToSlugMap[fromPath]}\n` +
@@ -78,9 +91,9 @@ exports.createPages = async ({graphql, boundActionCreators}) => {
 
         redirectToSlugMap[fromPath] = slug;
         createRedirect({
-          fromPath: `/${fromPath}`,
-          redirectInBrowser: true,
           toPath,
+          fromPath,
+          redirectInBrowser,
         });
       });
     }
@@ -100,8 +113,9 @@ exports.onCreateNode = ({node, boundActionCreators, getNode}) => {
         // content/foo/index.md => /foo/
         if (basename(relativePath, '.md') === 'index') {
           slug = `/${dir}/`;
-        } else {  // content/foo/bar.md => /foo/bar/
-          slug = `/${relativePath.replace('.md', '/')}`;
+        } else {
+          // content/foo/bar.md => /foo/bar/
+          slug = `/${relativePath.replace('.md', '')}`;
         }
       }
 
