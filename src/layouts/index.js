@@ -38,7 +38,7 @@ class Template extends Component {
           display: 'flex',
           flexDirection: 'column',
         }}>
-        <Header location={location} />
+        <Header location={location} disappearingBorder={!layoutHasSidebar} />
         <Flex
           direction="column"
           shrink="0"

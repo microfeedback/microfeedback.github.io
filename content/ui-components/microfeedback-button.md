@@ -70,7 +70,8 @@ The feedback dialog can be bound to any element by passing an
 ```javascript
 microfeedback(document.getElementById('custom-button'), {
   url: null,
-  title: 'Custom button example',
+  title: 'Binding to an element',
+  text: 'You can bind a feedback dialog to any element',
 });
 ```
 <button id="custom-button" class="mf-button-preview">Preview</button>
@@ -86,6 +87,8 @@ microfeedback(document.getElementById('custom-dialog'), {
   url: null,
   title: 'Custom dialog example',
   text: 'See the sweetalert2 docs for available customization options.',
+  input: 'text',
+  width: 600,
   placeholder: "What's on your mind?",
   cancelButtonText: 'Discard',
   confirmButtonText: 'Send it!',
@@ -167,7 +170,7 @@ microfeedback(document.getElementById('handling-failure'), {
       }, 2000);
     });
   },
-}),
+});
 ```
 
 <button id="handling-failure" class="mf-button-preview">Preview</button>

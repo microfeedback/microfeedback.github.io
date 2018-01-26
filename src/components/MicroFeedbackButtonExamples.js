@@ -12,13 +12,17 @@ export default class MicroFeedbackButtonExamples extends React.Component {
     this.buttons = [
 
       microfeedback($('#custom-button')[0], {
-        title: 'Custom button example',
+        url: null,
+        title: 'Binding to an element',
+        text: 'You can bind a feedback dialog to any element.',
       }),
 
       microfeedback($('#custom-dialog')[0], {
         url: null,
         title: 'Custom dialog example',
         text: 'See the sweetalert2 docs for available customization options.',
+        input: 'text',
+        width: 600,
         placeholder: "What's on your mind?",
         cancelButtonText: 'Discard',
         confirmButtonText: 'Send it!',

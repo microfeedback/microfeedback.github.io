@@ -34,10 +34,6 @@ class ScrollSyncSection extends Component {
       activeItemId: '',
       itemTopOffsets: [],
     };
-
-    this.calculateItemTopOffsets = this.calculateItemTopOffsets.bind(this);
-    this.handleResize = this.handleResize.bind(this);
-    this.handleScroll = this.handleScroll.bind(this);
   }
 
   componentDidMount() {
@@ -52,7 +48,8 @@ class ScrollSyncSection extends Component {
     window.removeEventListener('scroll', this.handleScroll);
   }
 
-  calculateItemTopOffsets() {
+  // eslint-disable-next-line no-undef
+  calculateItemTopOffsets = () => {
     const {section} = this.props;
 
     const itemIds = _getItemIds(section.items);
@@ -61,12 +58,14 @@ class ScrollSyncSection extends Component {
     });
   }
 
-  handleResize() {
+  // eslint-disable-next-line no-undef
+  handleResize = () => {
     this.calculateItemTopOffsets();
     this.handleScroll();
   }
 
-  handleScroll() {
+  // eslint-disable-next-line no-undef
+  handleScroll = () => {
     const {itemTopOffsets} = this.state;
     const item = itemTopOffsets.find((itemTopOffset, i) => {
       const nextItemTopOffset = itemTopOffsets[i + 1];
