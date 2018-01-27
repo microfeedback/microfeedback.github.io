@@ -16,7 +16,7 @@ class Header extends React.Component {
     super(props, context);
     let topOfPage;
     if (typeof window === 'undefined') {
-      topOfPage = false;
+      topOfPage = true;
     } else {
       topOfPage = window.scrollY < PAD;
     }
