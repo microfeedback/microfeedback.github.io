@@ -12,7 +12,6 @@ import {microfeedbackURL} from '../site-constants';
 // Import global styles
 import '../prism-styles';
 import '../css/reset.css';
-import '../css/microfeedback-button.css';
 
 let microfeedback;
 if (typeof window !== 'undefined') {
