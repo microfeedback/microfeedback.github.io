@@ -14,8 +14,14 @@ const PAD = 30;
 class Header extends React.Component {
   constructor(props, context) {
     super(props, context);
+    let topOfPage;
+    if (typeof window === 'undefined') {
+      topOfPage = false;
+    } else {
+      topOfPage = window.scrollY < PAD;
+    }
     this.state = {
-      topOfPage: window.scrollY < PAD,
+      topOfPage,
     };
   }
   componentDidMount() {
