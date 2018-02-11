@@ -104,3 +104,26 @@ The following options are available:
                     posted to. If `'*'`, allow posting to any repo
                     that the `GH_TOKEN` has access to (incl. any
                     public repos). Default: `'*'`
+
+### Spam detection with Akismet (Optional)
+
+microfeedback-github supports spam detection using
+[Akismet](https://akismet.com/).
+
+- `AKISMET_API_KEY`: Akismet API key to use for spam detection. If set,
+    all input will be checked using the Akismet API. An error response
+    will be returned when spam is detected.
+- `AKISMET_ENABLED`: Spam checking will automatically be enabled if
+    `AKISMET_API_KEY` is set. If you want to disable spam checking
+    anyway, set `AKISMET_ENABLED` to `false`.
+
+### Toxicity scoring with Perspective API (Optional)
+
+microfeedback-github supports toxicity scoring using the [Perspective
+API](https://www.perspectiveapi.com/).
+
+- `PERSPECTIVE_API_KEY`: Perspective API key to use for toxicity
+    scoring. Toxicity information will be included in posted issues.
+- `PERSPECTIVE_ENABLED`: Toxicity scoring will automatically be enabled if
+    `PERSPECTIVE_API_KEY` is set. If you want to disable toxicity scoring anyway,
+    set `PERSPECTIVE_ENABLED` to `false`.

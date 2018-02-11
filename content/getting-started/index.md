@@ -21,6 +21,8 @@ source solution** for collecting feedback about your website or app.
 
 * Users don't need to sign up to your issue tracker service in order to submit feedback.
 * Client information (browser, operating system) is included with every issue.
+* Spam detection using Akismet.
+* Toxicity scoring with the Perspective API.
 * Attach arbitrary metadata (e.g. user information) to issues.
 * Deploy easily to Now or Heroku--no databases or addons necessary.
 
