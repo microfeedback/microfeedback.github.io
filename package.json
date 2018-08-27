@@ -22,7 +22,7 @@
     "gatsby-plugin-react-helmet": "^2.0.3",
     "gatsby-plugin-typography": "^1.7.10",
     "gatsby-remark-autolink-headers": "^1.4.4",
-    "gatsby-remark-copy-linked-files": "^1.5.2",
+    "gatsby-remark-copy-linked-files": "^1.5.37",
     "gatsby-remark-images": "^1.5.39",
     "gatsby-remark-prismjs": "^2.0.1",
     "gatsby-remark-responsive-iframe": "^1.4.3",
