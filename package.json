@@ -58,7 +58,7 @@
     "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.1",
+    "babel-eslint": "^9.0.0",
     "eslint-config-xo-react": "^0.16.0",
     "gh-pages": "^1.1.0",
     "prettier": "^1.10.2",
