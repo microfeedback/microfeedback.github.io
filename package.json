@@ -11,7 +11,7 @@
   "dependencies": {
     "array-from": "^2.1.1",
     "compass-vertical-rhythm": "^1.4.5",
-    "eslint": "^4.16.0",
+    "eslint": "^5.4.0",
     "eslint-plugin-react": "^7.6.1",
     "gatsby": "^1.9.277",
     "gatsby-link": "^1.6.34",
