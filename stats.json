@@ -1,8 +1,8 @@
 {
   "assetsByChunkName": {
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-678f2d2847339e6b9244.js",
-      "component---src-pages-index-js-678f2d2847339e6b9244.js.map"
+      "component---src-pages-index-js-471a2ff72f3ce0f16603.js",
+      "component---src-pages-index-js-471a2ff72f3ce0f16603.js.map"
     ],
     "path---backends-microfeedback-github": [
       "path---backends-microfeedback-github-348319fbcec0d7ea5f93.js",
@@ -21,8 +21,8 @@
       "path---getting-started-tutorial-e79868b47593a2976f1a.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-da28744c750ee284e0fa.js",
-      "component---src-layouts-index-js-da28744c750ee284e0fa.js.map"
+      "component---src-layouts-index-js-13be8a2346284211a47a.js",
+      "component---src-layouts-index-js-13be8a2346284211a47a.js.map"
     ],
     "path---getting-started": [
       "path---getting-started-b2a0dfcd2d35327b649a.js",
@@ -37,8 +37,8 @@
       "path---index-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-404-js": [
-      "component---src-pages-404-js-66e31a5e2866a0831424.js",
-      "component---src-pages-404-js-66e31a5e2866a0831424.js.map"
+      "component---src-pages-404-js-34a47319e4de2136fc07.js",
+      "component---src-pages-404-js-34a47319e4de2136fc07.js.map"
     ],
     "commons": [
       "commons-7262985a2050e84f69ae.js",
@@ -65,8 +65,8 @@
       "path---getting-started-core-concepts-8ed5312521aee8bd1939.js.map"
     ],
     "component---src-templates-docs-js": [
-      "component---src-templates-docs-js-c4708e45d230bd851f75.js",
-      "component---src-templates-docs-js-c4708e45d230bd851f75.js.map"
+      "component---src-templates-docs-js-b8ebcef789dc1f2d0b34.js",
+      "component---src-templates-docs-js-b8ebcef789dc1f2d0b34.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
