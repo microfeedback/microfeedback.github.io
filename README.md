@@ -1,6 +1,6 @@
 # MicroFeedback website
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/microfeedback/microfeedback.github.io.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/microfeedback/microfeedback.github.io.svg?branch=dev)](https://travis-ci.org/microfeedback/microfeedback.github.io)
 
 ## Writing content
 
