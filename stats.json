@@ -1,12 +1,12 @@
 {
   "assetsByChunkName": {
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-3dfb6244b92fcdb02c36.js",
-      "component---src-pages-index-js-3dfb6244b92fcdb02c36.js.map"
+      "component---src-pages-index-js-678f2d2847339e6b9244.js",
+      "component---src-pages-index-js-678f2d2847339e6b9244.js.map"
     ],
     "path---backends-microfeedback-github": [
-      "path---backends-microfeedback-github-bf2f3cd9f45d994b9279.js",
-      "path---backends-microfeedback-github-bf2f3cd9f45d994b9279.js.map"
+      "path---backends-microfeedback-github-348319fbcec0d7ea5f93.js",
+      "path---backends-microfeedback-github-348319fbcec0d7ea5f93.js.map"
     ],
     "path---backends-writing-your-own-backend": [
       "path---backends-writing-your-own-backend-61e793553dde70d71b2c.js",
@@ -41,9 +41,9 @@
       "component---src-pages-404-js-66e31a5e2866a0831424.js.map"
     ],
     "commons": [
-      "commons-aa99ac5490464f615425.js",
+      "commons-7262985a2050e84f69ae.js",
       "build-js-styles.css",
-      "commons-aa99ac5490464f615425.js.map",
+      "commons-7262985a2050e84f69ae.js.map",
       "build-js-styles.css.map"
     ],
     "path---404-html": [
@@ -55,34 +55,34 @@
       "path---backends-effc014057676b64793c.js.map"
     ],
     "app": [
-      "app-8562e50fd0fa4e9e8db7.js",
+      "app-6fbeac86e200b1899c4a.js",
       "build-js-styles.css",
-      "app-8562e50fd0fa4e9e8db7.js.map",
+      "app-6fbeac86e200b1899c4a.js.map",
       "build-js-styles.css.map"
     ],
     "path---getting-started-core-concepts": [
-      "path---getting-started-core-concepts-85dac84a237a970e46b2.js",
-      "path---getting-started-core-concepts-85dac84a237a970e46b2.js.map"
+      "path---getting-started-core-concepts-8ed5312521aee8bd1939.js",
+      "path---getting-started-core-concepts-8ed5312521aee8bd1939.js.map"
     ],
     "component---src-templates-docs-js": [
-      "component---src-templates-docs-js-cb3781d7469fdd79c402.js",
-      "component---src-templates-docs-js-cb3781d7469fdd79c402.js.map"
+      "component---src-templates-docs-js-c4708e45d230bd851f75.js",
+      "component---src-templates-docs-js-c4708e45d230bd851f75.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
       "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---getting-started-deployment": [
-      "path---getting-started-deployment-a7dddf8dd7e76cd565de.js",
-      "path---getting-started-deployment-a7dddf8dd7e76cd565de.js.map"
+      "path---getting-started-deployment-67a17864fa7560c6513a.js",
+      "path---getting-started-deployment-67a17864fa7560c6513a.js.map"
     ],
     "path---ui-components-microfeedback-button": [
-      "path---ui-components-microfeedback-button-113f964235f136eb2444.js",
-      "path---ui-components-microfeedback-button-113f964235f136eb2444.js.map"
+      "path---ui-components-microfeedback-button-d28ed796a29b0f554ed2.js",
+      "path---ui-components-microfeedback-button-d28ed796a29b0f554ed2.js.map"
     ],
     "path---backends-microfeedback-jira": [
-      "path---backends-microfeedback-jira-794b76dd156d2a5a5f61.js",
-      "path---backends-microfeedback-jira-794b76dd156d2a5a5f61.js.map"
+      "path---backends-microfeedback-jira-4a3a2f1751b69871236b.js",
+      "path---backends-microfeedback-jira-4a3a2f1751b69871236b.js.map"
     ]
   }
 }
