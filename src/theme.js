@@ -300,6 +300,9 @@ sharedStyles.fluid = {
     minHeight: `calc(100vh - ${headerHeightLg}px)`,
     marginTop: 60,
   },
+  '@media (min-height: 900px)': {
+    minHeight: '930px',
+  },
 };
 
 export {colors, fonts, media, sharedStyles};
