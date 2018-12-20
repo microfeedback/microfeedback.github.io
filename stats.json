@@ -41,9 +41,9 @@
       "component---src-pages-404-js-34a47319e4de2136fc07.js.map"
     ],
     "commons": [
-      "commons-7262985a2050e84f69ae.js",
+      "commons-3626f419882150ce218e.js",
       "build-js-styles.css",
-      "commons-7262985a2050e84f69ae.js.map",
+      "commons-3626f419882150ce218e.js.map",
       "build-js-styles.css.map"
     ],
     "path---404-html": [
@@ -55,9 +55,9 @@
       "path---backends-effc014057676b64793c.js.map"
     ],
     "app": [
-      "app-6fbeac86e200b1899c4a.js",
+      "app-a7c8590c5210a9cbe21a.js",
       "build-js-styles.css",
-      "app-6fbeac86e200b1899c4a.js.map",
+      "app-a7c8590c5210a9cbe21a.js.map",
       "build-js-styles.css.map"
     ],
     "path---getting-started-core-concepts": [
@@ -65,8 +65,8 @@
       "path---getting-started-core-concepts-8ed5312521aee8bd1939.js.map"
     ],
     "component---src-templates-docs-js": [
-      "component---src-templates-docs-js-b8ebcef789dc1f2d0b34.js",
-      "component---src-templates-docs-js-b8ebcef789dc1f2d0b34.js.map"
+      "component---src-templates-docs-js-047b08280a60a79bb71f.js",
+      "component---src-templates-docs-js-047b08280a60a79bb71f.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
