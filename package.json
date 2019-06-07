@@ -18,7 +18,7 @@
     "gatsby-plugin-catch-links": "^1.0.26",
     "gatsby-plugin-favicon": "^2.1.1",
     "gatsby-plugin-glamor": "^1.6.13",
-    "gatsby-plugin-google-fonts": "0.0.4",
+    "gatsby-plugin-google-fonts": "1.0.1",
     "gatsby-plugin-react-helmet": "^2.0.11",
     "gatsby-plugin-typography": "^1.7.19",
     "gatsby-remark-autolink-headers": "^1.4.19",
